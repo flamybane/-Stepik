@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _Stepik
 {
+    [Serializable]
     public class Message
     {
 
