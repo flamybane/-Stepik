@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using _Stepik;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,8 @@ namespace ASPCoreServer.Controllers
     [ApiController]
     public class Messanger : ControllerBase
     {
-
-
-        // GET api/<Messanger>/5
+        static List<Message> ListOfMessages = new List<Message>();
+        // GET api/<Messanger>/5 
         [HttpGet("{id}")]
         public string Get(int id)
         {
